@@ -6,6 +6,11 @@
     --light-bg: #f5f6fa;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--dark-text);
