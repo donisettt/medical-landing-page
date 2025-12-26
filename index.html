@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiziFarma - Klinik Gizi & Apotik Terpadu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#">
+                <i class="fas fa-leaf me-2"></i>GiziFarma
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facility">Fasilitas & Apotik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Ahli Gizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+                <a href="#appointment" class="btn btn-success rounded-pill ms-3 px-4">Konsultasi Diet</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <div class="bg-shape-1"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-text">
+                    <span class="badge bg-light text-success mb-2 px-3 py-2 rounded-pill fw-bold">Solusi Hidup
+                        Sehat</span>
+                    <h1 class="display-4 fw-bold mb-3">Nutrisi Tepat & Obat Lengkap untuk Anda</h1>
+                    <p class="lead text-muted mb-4">Konsultasikan pola makan ideal bersama dokter spesialis gizi kami
+                        dan dapatkan kebutuhan suplemen serta obat terlengkap di apotik kami.</p>
+                    <div class="search-box p-1 bg-white shadow-sm rounded-pill d-flex">
+                        <input type="text" class="form-control border-0 rounded-pill px-4"
+                            placeholder="Cari vitamin, obat, atau layanan...">
+                        <button class="btn btn-primary rounded-pill px-4">Cari</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="image-blob-mask">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Makanan Sehat dan Nutrisi" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="circle-image-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2964/2964514.png" width="300"
+                            class="img-fluid rounded-circle shadow-lg" alt="Pharmacist">
+                        <div class="overlay-text">Terintegrasi</div>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <h2 class="fw-bold mb-3">Sinergi Klinik Gizi & Apotik Modern</h2>
+                    <p class="text-muted mb-4">Kami tidak hanya mengatur pola makan Anda, tetapi juga menyediakan
+                        dukungan farmasi lengkap. Mulai dari program diet medis, penanganan gizi penyakit degeneratif,
+                        hingga penebusan resep obat dan vitamin.</p>
+
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <h3 class="fw-bold text-success">10k+</h3>
+                            <span class="badge bg-light text-dark rounded-pill px-3 py-2">Pasien Sehat</span>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold text-success">500+</h3>
+                            <span class="badge bg-light text-dark rounded-pill px-3 py-2">Jenis Vitamin</span>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold text-dark">100%</h3>
+                            <span class="small text-muted d-block">Obat Asli</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facility" class="py-5 position-relative">
+        <div class="bg-shape-2"></div>
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-8">
+                    <div class="row g-4 mobile-scroll-container">
+                        <div class="col-md-4 col-12">
+                            <div class="card border-0 shadow-sm h-100 facility-card">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Konsultasi">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">Ruang Konsultasi</h6>
+                                    <p class="small text-muted">Privasi terjaga dengan dokter Sp.GK.</p>
+                                    <button class="btn btn-sm btn-outline-success w-100 rounded-pill"
+                                        data-bs-toggle="modal" data-bs-target="#modalKonsultasi">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="card border-0 shadow-sm h-100 facility-card">
+                                <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Body Composition">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">Body Composition</h6>
+                                    <p class="small text-muted">Analisa kadar lemak & otot akurat.</p>
+                                    <button class="btn btn-sm btn-outline-success w-100 rounded-pill"
+                                        data-bs-toggle="modal" data-bs-target="#modalBodyComp">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="card border-0 shadow-sm h-100 facility-card">
+                                <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Apotik">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">Apotik Lengkap</h6>
+                                    <p class="small text-muted">Obat resep, herbal & suplemen vitamin terpercaya.</p>
+                                    <button class="btn btn-sm btn-outline-success w-100 rounded-pill"
+                                        data-bs-toggle="modal" data-bs-target="#modalApotik">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end d-none d-md-block">
+                    <h2 class="display-5 fw-bold text-success">Fasilitas<br>Terpadu</h2>
+                    <p class="text-muted small">Mendukung perjalanan kesehatan Anda.</p>
+                    <div class="mt-3">
+                        <button class="btn btn-light rounded-circle shadow-sm me-2"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="btn btn-white rounded-circle shadow-sm"><i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors" class="py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-5 text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2964/2964514.png" width="250"
+                        alt="Healthy Icon" class="img-fluid opacity-75">
+                </div>
+                <div class="col-lg-7 mt-4">
+                    <h2 class="fw-bold mb-3">Layanan Spesialisasi Kami</h2>
+                    <p class="text-muted">Fokus kami adalah perbaikan metabolisme dan penyediaan obat berkualitas.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <button class="btn btn-success rounded-pill btn-sm px-4">Program Diet & Slimming</button>
+                        <button class="btn btn-outline-success rounded-pill btn-sm px-4">Gizi Diabetes &
+                            Hipertensi</button>
+                        <button class="btn btn-outline-success rounded-pill btn-sm px-4">Gizi Anak & Stunting</button>
+                        <button class="btn btn-outline-success rounded-pill btn-sm px-4">Konsultasi Obat</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-3">
+                    <h3 class="fw-bold mb-4">Tim Ahli</h3>
+                    <div class="list-group list-group-flush doctor-menu">
+                        <a href="#"
+                            class="list-group-item list-group-item-action active rounded-3 mb-2">Semua</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 mb-2">Dokter
+                            Sp.GK</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 mb-2">Apoteker</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 mb-2">Ahli Gizi
+                            Olahraga</a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row g-3 mobile-scroll-container">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm p-2 d-flex flex-row align-items-center">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    class="rounded-circle ms-2" width="80" height="80" alt="Doc">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">dr. Lina Marlina, Sp.GK</h6>
+                                    <small class="text-muted">Spesialis Gizi Klinik</small>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <small class="text-warning"><i class="fas fa-star"></i> 5.0</small>
+                                        <button class="btn btn-sm btn-primary rounded-pill px-3">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm p-2 d-flex flex-row align-items-center">
+                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    class="rounded-circle ms-2" width="80" height="80" alt="Doc">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Apt. Budi Santoso, S.Farm</h6>
+                                    <small class="text-muted">Apoteker Penanggung Jawab</small>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <small class="text-warning"><i class="fas fa-star"></i> 4.9</small>
+                                        <button class="btn btn-sm btn-primary rounded-pill px-3">Chat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm p-2 d-flex flex-row align-items-center">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    class="rounded-circle ms-2" width="80" height="80" alt="Doc">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">dr. Kevin Wijaya, Sp.GK</h6>
+                                    <small class="text-muted">Ahli Gizi Olahraga</small>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <small class="text-warning"><i class="fas fa-star"></i> 4.8</small>
+                                        <button class="btn btn-sm btn-primary rounded-pill px-3">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm p-2 d-flex flex-row align-items-center">
+                                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    class="rounded-circle ms-2" width="80" height="80" alt="Doc">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Suster Ani</h6>
+                                    <small class="text-muted">Konselor Diet</small>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <small class="text-warning"><i class="fas fa-star"></i> 4.9</small>
+                                        <button class="btn btn-sm btn-primary rounded-pill px-3">Chat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="card p-4 border-0 shadow-sm mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3"
+                                width="50" alt="User">
+                            <div>
+                                <h6 class="fw-bold mb-0">Siti Aminah</h6>
+                                <small class="text-muted">Program Turun Berat Badan</small>
+                            </div>
+                        </div>
+                        <p class="fst-italic">"Berhasil turun 10kg dalam 3 bulan berkat panduan dr. Lina! Apotiknya
+                            juga lengkap, jadi sekalian beli vitamin D3 disini."</p>
+                        <div class="text-warning small"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="fw-bold text-success">Cerita<br>Sukses</h2>
+                    <i class="fas fa-carrot fa-3x text-success opacity-25"></i>
+                </div>
+            </div>
+
+            <div id="appointment" class="cta-box bg-white p-4 p-md-5 rounded-4 shadow mt-5 text-center position-relative overflow-hidden">
+                <div class="row align-items-center position-relative z-1">
+                    <div class="col-md-7 text-center text-md-start mb-4 mb-md-0">
+                        <h3 class="fw-bold">Ingin Badan Ideal & Sehat?</h3>
+                        <p class="mb-0 text-muted">Mulai perjalanan gizi Anda sekarang atau pesan obat via WhatsApp.</p>
+                    </div>
+                    
+                    <div class="col-md-5 text-center text-md-end">
+                        <button class="btn btn-success btn-lg rounded-pill px-5 shadow-lg w-100 w-md-auto">
+                            Konsultasi Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="pt-5 pb-3 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">GiziFarma</h5>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-success"></i> <strong>Jakarta
+                                Selatan:</strong> Jl. Senopati No. 10 (Gedung Apotik)</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2 text-success"></i> (021) 777-8888</li>
+                        <li class="mb-2"><i class="fab fa-whatsapp me-2 text-success"></i> 0812-3456-7890 (Chat
+                            Apotik)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <div class="map-container rounded-4 overflow-hidden shadow-sm">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4664534727415!2d106.82715331476906!3d-6.202029995509983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3ba00000001%3A0x1!2sJakarta!5e0!3m2!1sen!2sid!4v1625637282000!5m2!1sen!2sid"
+                            width="100%" height="250" style="border:0;" allowfullscreen=""
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <a class="navbar-brand fw-bold text-success" href="#">
+                        <i class="fas fa-leaf me-2"></i>GiziFarma
+                    </a>
+                    <small class="d-block text-muted mt-2">© 2025 GiziFarma Clinic & Pharmacy by Doni Sw.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-muted me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalKonsultasi" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Detail Ruang Konsultasi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-3 mb-3" alt="Konsultasi">
+                    <p class="text-muted">Kami menyediakan ruang konsultasi privat yang nyaman untuk membahas rencana
+                        diet dan kesehatan Anda. Dilengkapi dengan peralatan medis standar internasional untuk
+                        pemeriksaan awal gizi.</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-4"
+                        data-bs-dismiss="modal">Tutup</button>
+                    <a href="https://wa.me/6285757501928" class="btn btn-success rounded-pill px-4">Chat Admin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBodyComp" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Analisa Komposisi Tubuh</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-3 mb-3" alt="Body Comp">
+                    <p class="text-muted">Menggunakan teknologi Bioelectrical Impedance Analysis (BIA) tercanggih untuk
+                        mengetahui kondisi tubuh Anda secara mendalam, bukan sekadar berat badan.</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-4"
+                        data-bs-dismiss="modal">Tutup</button>
+                    <button class="btn btn-success rounded-pill px-4">Daftar Cek</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalApotik" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Layanan Apotik GiziFarma</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-3 mb-3" alt="Apotik">
+                    <p class="text-muted">Apotik kami menyediakan obat-obatan khusus gizi, suplemen diet legal, serta
+                        vitamin impor dan lokal yang sudah terverifikasi BPOM.</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light rounded-pill px-4"
+                        data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-primary rounded-pill px-4">Pesan via WA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

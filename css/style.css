@@ -1,0 +1,249 @@
+/* Color Variables - Update untuk Gizi & Apotik */
+:root {
+    --primary-color: #00A8FF; /* Biru Medis/Apotik */
+    --secondary-color: #4CD137; /* Hijau Segar/Gizi */
+    --dark-text: #2f3640;
+    --light-bg: #f5f6fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-text);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+    color: #555;
+}
+.nav-link.active {
+    color: var(--secondary-color) !important; /* Ganti jadi hijau */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #0097e6;
+}
+/* Tombol Success (Hijau) kita jadikan default untuk CTA utama */
+.btn-success {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+}
+.btn-success:hover {
+    background-color: #44bd32;
+}
+
+.btn-outline-success {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.btn-outline-success:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 80px;
+}
+
+/* Shape Background - Gradasi Hijau ke Biru */
+.bg-shape-1 {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 60%;
+    height: 120%;
+    background: radial-gradient(circle at center, #4CD137 0%, #00A8FF 100%); /* Mix Hijau Biru */
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    opacity: 0.1;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+
+.image-blob-mask img {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 10px 30px rgba(76, 209, 55, 0.3); /* Shadow hijau */
+    max-width: 80%;
+}
+
+/* About Us */
+.circle-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.circle-image-wrapper img {
+    border: 10px solid rgba(0, 168, 255, 0.1);
+}
+.circle-image-wrapper .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Facilities */
+.bg-shape-2 {
+    position: absolute;
+    top: 10%;
+    right: -20%;
+    width: 50vw;
+    height: 80%;
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.facility-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.facility-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Doctor Menu & Cards */
+.doctor-menu .list-group-item.active {
+    background-color: #d1fae5; /* Hijau muda pudar */
+    color: var(--secondary-color);
+    border-color: transparent;
+    font-weight: 600;
+}
+
+/* CTA Box */
+.cta-box {
+    border: 1px solid #eee;
+}
+.cta-box::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(76, 209, 55, 0.1); /* Aksen hijau */
+    border-radius: 50%;
+}
+
+/* =========================================
+   MOBILE PREMIUM OPTIMIZATION
+   ========================================= */
+
+/* 1. Typography Adjustment for Mobile */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem; /* Judul Hero tidak terlalu besar */
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    p.lead {
+        font-size: 1rem;
+    }
+    
+    /* Hero Section Mobile */
+    .hero-section {
+        text-align: center;
+        padding-top: 100px;
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .hero-section .bg-shape-1 {
+        width: 100%;
+        top: 0;
+        border-radius: 0 0 50% 50%; /* Lengkungan bawah yang elegan */
+    }
+
+    .image-blob-mask img {
+        margin-top: 2rem;
+        max-width: 70%; /* Gambar tidak memenuhi layar */
+    }
+
+    /* Search Box Floating Fix */
+    .search-box {
+        margin-top: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    }
+    
+    .search-box input {
+        padding-left: 15px !important;
+    }
+}
+
+/* =========================================
+   UPDATE: FIX DESKTOP GRID & MOBILE SCROLL
+   ========================================= */
+
+/* Kode ini HANYA aktif di layar HP (max 768px) */
+@media (max-width: 768px) {
+    
+    /* Memaksa container menjadi satu baris panjang ke samping */
+    .mobile-scroll-container {
+        display: flex !important; /* Paksa Flexbox */
+        flex-wrap: nowrap !important; /* PENTING: Jangan biarkan turun ke bawah (wrapping) */
+        overflow-x: auto; /* Izinkan scroll samping */
+        scroll-snap-type: x mandatory; /* Efek magnet saat scroll */
+        gap: 1rem;
+        padding-bottom: 1.5rem; /* Ruang untuk shadow kartu */
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-right: -12px; /* Efek kartu terpotong di ujung kanan */
+        -webkit-overflow-scrolling: touch; /* Smooth scroll iOS */
+    }
+    
+    /* Sembunyikan scrollbar agar rapi */
+    .mobile-scroll-container::-webkit-scrollbar {
+        display: none; 
+    }
+
+    /* Mengatur lebar Kartu di HP */
+    .mobile-scroll-container > .col-md-4, 
+    .mobile-scroll-container > .col-md-6 {
+        flex: 0 0 85%; /* Kartu mengambil 85% lebar layar HP */
+        max-width: 85%; /* Mencegah kartu melebar */
+        width: 85%;
+        scroll-snap-align: center; /* Posisi berhenti scroll di tengah */
+    }
+
+    /* Memastikan tombol filter dokter juga bisa discroll */
+    .doctor-menu {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border: none;
+        gap: 10px;
+    }
+    
+    .doctor-menu a {
+        display: inline-block;
+        width: auto;
+        border-radius: 50px !important;
+        border: 1px solid #eee !important;
+        padding: 8px 20px;
+        flex: 0 0 auto; /* Mencegah tombol gepeng */
+    }
+}
